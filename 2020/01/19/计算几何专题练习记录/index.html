@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>计算几何专题练习记录 - xyfJASON</title><link rel="manifest" href="/blog-xcpc/manifest.json"><meta name="application-name" content="xyfJASON-xcpc"><meta name="msapplication-TileImage" content="/logo/myfavicon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="xyfJASON-xcpc"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="部分题目参考来源：1 2 3 《算法竞赛入门经典——训练指南》  计算几何专题练习记录（二）：link"><meta property="og:type" content="blog"><meta property="og:title" content="计算几何专题练习记录"><meta property="og:url" content="http://xyfjason.github.io/blog-xcpc/2020/01/19/%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95%E4%B8%93%E9%A2%98%E7%BB%83%E4%B9%A0%E8%AE%B0%E5%BD%95/"><meta property="og:site_name" content="xyfJASON"><meta property="og:description" content="部分题目参考来源：1 2 3 《算法竞赛入门经典——训练指南》  计算几何专题练习记录（二）：link"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="http://xyfjason.github.io/blog-xcpc/gallery/pexels_gear1.jpg"><meta property="article:published_time" content="2020-01-19T00:50:13.000Z"><meta property="article:modified_time" content="2021-02-25T03:47:44.937Z"><meta property="article:author" content="xyfJASON"><meta property="article:tag" content="学习笔记"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/blog-xcpc/gallery/pexels_gear1.jpg"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://xyfjason.github.io/blog-xcpc/2020/01/19/%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95%E4%B8%93%E9%A2%98%E7%BB%83%E4%B9%A0%E8%AE%B0%E5%BD%95/"},"headline":"计算几何专题练习记录","image":["http://xyfjason.github.io/blog-xcpc/gallery/pexels_gear1.jpg"],"datePublished":"2020-01-19T00:50:13.000Z","dateModified":"2021-02-25T03:47:44.937Z","author":{"@type":"Person","name":"xyfJASON"},"publisher":{"@type":"Organization","name":"xyfJASON","logo":{"@type":"ImageObject","url":"http://xyfjason.github.io/logo/logo.png"}},"description":"部分题目参考来源：1 2 3 《算法竞赛入门经典——训练指南》  计算几何专题练习记录（二）：link"}</script><link rel="canonical" href="http://xyfjason.github.io/blog-xcpc/2020/01/19/%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95%E4%B8%93%E9%A2%98%E7%BB%83%E4%B9%A0%E8%AE%B0%E5%BD%95/"><link rel="icon" href="/blog-xcpc/logo/myfavicon.png"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/blog-xcpc/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/blog-xcpc/"><img src="/blog-xcpc/logo/logo.png" alt="xyfJASON" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/blog-xcpc/">Home</a><a class="navbar-item" href="/blog-xcpc/archives">Archives</a><a class="navbar-item" href="/blog-xcpc/categories">Categories</a><a class="navbar-item" href="/blog-xcpc/tags">Tags</a><a class="navbar-item" href="/blog-xcpc/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="GitHub" href="https://github.com/xyfjason"><i class="fab fa-github"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><div class="card-image"><span class="image is-7by3"><img class="fill" src="/blog-xcpc/gallery/pexels_gear1.jpg" alt="计算几何专题练习记录"></span></div><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2020-01-19T00:50:13.000Z" title="2020/1/19 上午8:50:13">2020-01-19</time>发表</span><span class="level-item"><time dateTime="2021-02-25T03:47:44.937Z" title="2021/2/25 上午11:47:44">2021-02-25</time>更新</span><span class="level-item"><a class="link-muted" href="/blog-xcpc/categories/ICPC-CCPC/">ICPC/CCPC</a><span> / </span><a class="link-muted" href="/blog-xcpc/categories/ICPC-CCPC/Exercises/">Exercises</a></span><span class="level-item">21 分钟读完 (大约3095个字)</span></div></div><h1 class="title is-3 is-size-4-mobile">计算几何专题练习记录</h1><div class="content"><p>部分题目参考来源：<a target="_blank" rel="noopener" href="https://blog.csdn.net/liuqiyao_01/article/details/8750742">1</a> <a target="_blank" rel="noopener" href="https://www.cnblogs.com/vongang/archive/2012/04/07/2435695.html">2</a> <a target="_blank" rel="noopener" href="https://blog.csdn.net/qq172108805/article/details/10003581">3</a> <a target="_blank" rel="noopener" href="https://item.jd.com/11111050.html">《算法竞赛入门经典——训练指南》</a> </p>
+<p>计算几何专题练习记录（二）：<a href="https://xyfjason.github.io/2020/04/06/%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95%E4%B8%93%E9%A2%98%E7%BB%83%E4%B9%A0%E8%AE%B0%E5%BD%95%EF%BC%88%E4%BA%8C%EF%BC%89/">link</a> </p>
+<span id="more"></span>
+
+
+
+<h2 id="基础知识应用"><a href="#基础知识应用" class="headerlink" title="基础知识应用"></a>基础知识应用</h2><ul>
+<li>poj 2318 TOYS: 判断点在直线的左右。$\star$ </li>
+<li>poj 2398 Toy Storage: 同上。$\star$ </li>
+<li>poj 1556 The Doors: 判断线段相交，建图跑最短路。$\star\star$ </li>
+<li>poj 1696 Space Ant: 从最低点开始尽可能左转少的角度，卷包裹。$\star\star$ </li>
+<li>poj 3304 Segments: 转化问题为找一条直线与所有线段相交，又易知平移旋转该直线可使其与两个线段端点重合，故枚举即可。$\star\star\star$ </li>
+<li>poj 1127 Jack Straws: 线段相交，并查集。$\star$ </li>
+<li>poj 1654 Area: 多边形面积。$\star$ </li>
+<li>poj 1408 Fishnet: 四边形面积。$\star$ </li>
+<li>poj 2954 Triangle: Pick 定理，gcd 计算边上的点数。$\star$ </li>
+<li>poj 2031 Building a Space Station: 球体相交，最小生成树。$\star$ </li>
+<li>poj 1584 A Round Peg in a Ground Hole: 判断圆是否在凸多边形内部时，首先看圆心是否在多边形内，然后看距离与半径大小。$\star$ </li>
+<li>poj 3334 Connected Gheeves: 二分答案，多边形面积。$\star\star$ </li>
+<li>poj 1819 Disks: 计算相切时圆心，不要忘了处理开头与结尾。$\star\star$ </li>
+<li>poj 2826 An Easy Problem?!: 情况容易漏掉，另外还有一个坑：输出时可能输出 <code>-0.00</code>，应加上 <code>eps</code> 后再输出。$\star\star\star$ </li>
+<li>poj 2074 Line of Sight: 视线遮挡问题。$\star\star$ </li>
+<li>poj 1039 Pipe: 容易发现一定存在过一个上端点、过一个下端点的最优光路，于是枚举端点，依次判断相交即可，注意端点相交的处理。$\star\star$ </li>
+<li>poj 1418 Viva Confetti: 每一个可见部分都由几段小圆弧构成，可以先求出所有小圆弧，将其中点向内向外扰动一点点得到两点，标记包含这两点的最顶端的圆盘为可见。$\star\star\star\star$ </li>
+<li>UVA 11817 Tunnelling the Earth: 球面距离。$\star$ </li>
+<li>UVA 10969 Sweet Dream: 和 poj1418 类似，找出所有小圆弧，用其中点判断该段小圆弧是否被覆盖。$\star\star\star$ </li>
+<li>UVA 11178 Morley’s Theorem: 角度计算、向量旋转、直线相交。$\star$ </li>
+<li>UVA 1342 The Nice Euler Circuits: 欧拉定理，线段相交。$\star\star$ </li>
+<li>UVA 11796 Dog Distance: 模拟，把同时运动的距离最值转化成点到线段距离最值（绝对速度转化为相对速度）$\star\star$ </li>
+<li>UVA 11177 Fighting against a Polygonal Monster: 二分答案，多边形与圆相交的面积。$\star\star\star$ </li>
+<li>UVA 1340 Find The Border: 卷包裹，从最左下端开始沿着线段走，走到一个交点后尽可能地右转，继续走。$\star\star\star$ </li>
+<li>UVA 12296 Pieces and Discs: 切割多边形；判断多边形与圆的位置关系：圆心在多边形内或圆心到多边形边（是一系列线段）的距离小于圆的半径）$\star\star\star$ </li>
+<li>CF 1254C Point Ordering: 交互题。首先用 $n-2$ 次提问确定 $3$ 至 $n$ 这些点在 $1,2$ 两点连线的左右，对于左边的那些点（右边同理），用第一种提问得到它们到 $1,2$ 连线的距离，找到最远的点 $mark$，判断其他点是在 $1,mark$ 之间还是 $mark,2$ 之间，分别按距离排序后就形成了逆时针方向。$\star\star\star\star$ </li>
+<li>CF 961D Pair Of Lines: 找三个不共线的点，两两配对连线作为一条直线，判断其余点是否在这条线上或构成另一条线。$\star\star$ </li>
+<li>CF 1059D Nature Reserve: 二分答案，<code>check</code>：判断一个半径为 $r$ 的圆能否覆盖所有点，即判断以每个点为圆心、以 $r$ 为半径构造的圆是否有公共交点，又圆心在 $y=r$ 上，只需判断构造的圆与 $y=r$ 交成的线段是否有公共交点即可。小心卡精度，用 <code>long double</code> 并且二分150次就退出。$\star\star\star\star$ </li>
+</ul>
+<h2 id="初中平几"><a href="#初中平几" class="headerlink" title="初中平几"></a>初中平几</h2><ul>
+<li>UVA 11437 Triangle Fun: 梅涅劳斯定理。$\star$ </li>
+<li>UVA 11800 Determine the Shape: 判断四边形形状。$\star$ </li>
+<li>UVA 11646 Athletics Track: 平几。$\star$ </li>
+<li>UVA 11524 InCircle: 内切圆。$\star$ </li>
+<li>UVA 11731 Ex-Circles: 旁切圆。$\star\star$ </li>
+<li>UVA 10566 Crossed Ladders: 相似三角形，二分答案。$\star$ </li>
+<li>UVA 11186 Circum Triangle: 把三角形面积拆成和圆心连线后的三个三角形面积之和/差，枚举边，数多少取正多少取负。$\star\star\star$ </li>
+<li>UVA 1447 Malfatti Circles: 内切圆，推不出公式可以二分。$\star\star\star$ </li>
+<li>UVA 12165 Triangle Hazard: 梅涅劳斯定理。$\star\star$ </li>
+<li>UVA 1473 Dome of Circus: 转化为平面坐标系，三分。$\star\star$ </li>
+</ul>
+<h2 id="反演变换"><a href="#反演变换" class="headerlink" title="反演变换"></a>反演变换</h2><ul>
+<li>hdu 4773 Problems of Apollonius: 视要求经过的点为反演中心，任取反演半径，则根据反演的性质，所求圆反演后是一条直线，且与给定两圆的反演圆相切，即反演直线是两反演圆的公切线。于是求得公切线之后再反演回去即可。$\star\star\star\star$ </li>
+<li>hdu 6158 The Designer: 选取两大圆的切点为反演中心，任取反演半径，则两大圆反演为两直线，所有小圆的反演圆都是夹在这两条直线之间的半径相同的圆，根据反演圆的信息倒推小圆半径即可。当答案小到不影响精度时就 <code>break</code> 掉。$\star\star\star$ </li>
+</ul>
+<h2 id="平面最近点对"><a href="#平面最近点对" class="headerlink" title="平面最近点对"></a>平面最近点对</h2><ul>
+<li>luogu P1429: 模板</li>
+<li>poj 3714 Raid: 对模板略加修改即可。$\star$ </li>
+</ul>
+<h2 id="凸包"><a href="#凸包" class="headerlink" title="凸包"></a>凸包</h2><ul>
+<li>luogu P2742: 模板</li>
+<li>poj 1873 The Fortified Forest: 二进制枚举，求凸包。$\star\star\star$ </li>
+<li>poj 1228 Grandpa’s Estate: 判断凸包是否存在仅有两个点的边。$\star\star$ </li>
+<li>poj 3348 Cows: 求凸包面积。$\star$ </li>
+<li>poj 1113 Wall: 凸包周长。$\star$ </li>
+<li>[SHOI2012]信用卡凸包: 凸包周长加一个圆周长。$\star$ </li>
+<li>UVA 10652 Board Wrapping: 求凸包面积。$\star$ </li>
+<li>UVA 109 SCUD Busters: 求凸包及面积，判断点在多边形内。$\star$ </li>
+<li>UVA 11168 Airport: 凸包，总距离需要转换为解析几何的思路方可 $O(1)$ 计算。$\star\star$ </li>
+<li>UVA 10256 The Great Divide: 判断两凸包是否有公共部分——看点在不在对方凸包内、看凸包线段是否相交。$\star\star\star$ </li>
+<li>CF 1142C U2: 很妙的一道题！抛物线函数式改写成：$y-x^2=bx+c$，我们发现如果把所有点 $(x,y)$ 改成 $(x,y-x^2)$，那么抛物线就变成了直线，一个点在原抛物线内等价于改动后的点在直线上方，所以求出上凸包的边数即可。$\star\star\star\star$ </li>
+</ul>
+<h2 id="旋转卡壳"><a href="#旋转卡壳" class="headerlink" title="旋转卡壳"></a>旋转卡壳</h2><ul>
+<li>luogu P1452: 求凸包直径。$\star$ </li>
+<li>poj 2187 Beauty Contest: 求凸包直径。$\star$ </li>
+<li>UVA 1453 Squares: 求凸包直径，输入可能重复，需要去重。$\star\star$ </li>
+<li>poj 3608 Bridge Across Islands: 求两凸包之间的最短距离。$\star\star\star$ </li>
+<li>[HNOI2007]最小矩形覆盖: 求覆盖所有点的最小面积矩形，先求出凸包，这个矩形的一条边一定与凸包的一条边共线，于是旋转卡壳枚举矩形一条边，找到对踵点作为对边上的点，然后向左向右找到左右边界。找左右边界时找投影长度最长的点，容易发现投影长度函数是单峰的，所以可以三分法求得（然而与暴力找时间开销几近相同）$\star\star\star$ </li>
+<li>UVA 12307 Smallest Enclosing Rectangle: 求覆盖所有点的最小面积矩形和最小周长矩形：最小周长矩形也是一定有一条边与凸包一条边共线，在 HNOI2007 的最小面积矩形的基础上稍加改动即可。$\star\star\star$ </li>
+</ul>
+<h2 id="半平面交"><a href="#半平面交" class="headerlink" title="半平面交"></a>半平面交</h2><ul>
+<li><p>poj 3335 Rotating Scoreboard: 模板，判断多边形是否有核。</p>
+</li>
+<li><p>poj 3130 How I Mathematician Wonder What You Are!: 模板，同上。</p>
+</li>
+<li><p>poj 1474 Video Surveillance: 模板，同上。</p>
+</li>
+<li><p>poj 1279 Art Gallery: 模版，求多边形核的面积。</p>
+</li>
+<li><p>[CQOI2006]凸多边形: 模版，同上。</p>
+</li>
+<li><p>poj 2451 Uyuw’s Concert: 同上。</p>
+</li>
+<li><p>poj 3525 Most Distant Point from the Sea: 求凸多边形最大内切圆，二分答案，判断半平面交是否为空。$\star\star$ </p>
+</li>
+<li><p>poj 3384 Feng Shui: 把问题转化为求将每条边向内平移 $r$ 长度后形成的凸多边形直径，该凸多边形用半平面交来生成。$\star\star\star$ </p>
+</li>
+<li><p>poj 2540 Hotter Colder: 把条件转化为半平面，注意方向。$\star\star\star$ </p>
+</li>
+<li><p>poj 1755 Triathlon: 设第一段长 $a$，第二段长 $b$，第三段长 $1-a-b$，列出 $i$ 快于 $j$ 的表达式，得到线性规划区域，半平面交判断是否有解。此题卡精度，需设置 <code>eps=1e-16</code>。$\star\star\star$ </p>
+</li>
+<li><p>[JSOI2004]平衡点: 初始平面是整个平面，取平面的中心，计算合力，则平衡点一定在合力指向的那个半平面上，于是不断二分、不断用半平面切割平面，直到剩余平面够小了则输出。$\star\star\star\star$ </p>
+</li>
+<li><p>UVA 1475 Jungle Outpost: 假设已知敌人炸了 $k$ 座瞭望台，我们可以通过数归证明敌人的最优策略是炸掉连续的 $k$ 座瞭望台，此时，对应不同连续 $k$ 座被炸的瞭望台，保留部分是不同的半平面，它们交集非空，则总部设在其交集中便总能被保护。于是二分答案，判断半平面交是否为空。$\star\star\star$ </p>
+</li>
+<li><p>[SCOI2015]小凸想跑步: 列式表示 $\Delta p01&lt;\Delta pab$：$(x-x_0,y-y_0)\times(x-x_1,y-y_1)&lt;(x-x_a,y-y_a)\times(x-x_b,y-y_b)$，整理得：$(y_0-y_1+y_b-y_a)x+(x_1-x_0+x_a-x_b)y&lt;x_1y_0-x_0y_1+x_ay_b-x_by_a$，为一个半平面，计算半平面面积。</p>
+<p>备注：$ax+by+c&lt;0$ 表示半平面时，方向向量为 $(-b, a)$. $\star\star\star$ </p>
+</li>
+</ul>
+<h2 id="扫描线"><a href="#扫描线" class="headerlink" title="扫描线"></a>扫描线</h2><ul>
+<li>poj 1151 Atlantis: 模板，数据不大，可暴力。</li>
+<li>luogu P5490: 模板</li>
+<li>poj 3832 Posters: 注意不能添加空矩形区域，否则会 RE. </li>
+<li>poj 1177 Picture: 求图形周长，线段树需要多维护一个区间覆盖段数的信息，扫描线每扫到一个高度，竖直方向上周长加上两倍段数乘以高度，水平方向上周长加上当前覆盖长度与前一个覆盖长度的差的绝对值。$\star\star\star$ </li>
+<li>luogu P1502 窗口的星星: 每一颗星星右上方划出一块 $W\times H$ 的矩形区域，则窗户右上角落在该区域内时该星星可见。于是可以扫描线解之，线段树维护区间加、区间求最大值操作。$\star\star\star$ </li>
+<li>poj 2932 Coneology: 由于两圆不可能有交点，所以一个圆覆盖另一个等价于另一个圆的圆心在这个圆内，然后从下往上扫描，每扫到一个圆的下界时判断这个圆有没有被已经扫过的圆覆盖，如果没有，则它一定是不被任何圆覆盖的；判断时，只需要判断当前圆左边横坐标方向最近的和右边横坐标方向最近的圆是否覆盖它即可，因为如果这两个圆都不覆盖的话，其他圆更不可能覆盖。于是乎，我们可以用一个可查询前驱或后继的数据结构维护不被任何圆覆盖的圆这个集合——平衡树、STL 的 <code>set</code>、值域线段树都可以。$\star\star\star\star$ </li>
+<li>hdu 1255 覆盖的面积: 由于没有 <code>pushdown</code> 操作，需要深入理解 <code>cnt</code> 标记——<code>cnt == 0</code> 表示区间信息完全未知，更新信息从子节点直接更新；<code>cnt == 1</code> 表示区间被覆盖至少 $1$ 次（有可能更多次），更新信息时，被覆盖 $2$ 次的长度等于左右子节点被覆盖 $1$ 次的长度和（因为已知本身被覆盖至少 $1$ 次，而这 $1$ 次是不会下放到子节点的）；<code>cnt &gt;= 2</code> 表示区间被覆盖至少 $2$ 次（有可能更多次），被覆盖 $2$ 次的长度等于区间长度。$\star\star\star$ </li>
+<li>World Finals 2008 The Sky is the Limit: 记录山顶、山脚和交点的横坐标，扫描线从左往右扫之，在每个区间内枚举寻找最高的线段即可。$\star\star$ </li>
+</ul>
+<h2 id="三维凸包"><a href="#三维凸包" class="headerlink" title="三维凸包"></a>三维凸包</h2><ul>
+<li>luogu P4724: 模板</li>
+<li>hdu 3662 3D Convex Hull: 求三维凸包的面数。$\star$ </li>
+<li>hdu 4266 The Worm in the Apple: 求凸包内的点到凸包表面的最小距离。$\star$ </li>
+<li>hdu 4273 Rescue: 求凸包重心到凸包表面最小距离。多面体重心求法：任取一点，用该点与多面体的面形成的三角锥分割多面体，三角锥的重心即其各顶点坐标的平均值，多面体的重心即各三角锥的重心坐标按照其质量（体积）加权的平均值。$\star\star$ </li>
+</ul>
+<h2 id="计算几何背景"><a href="#计算几何背景" class="headerlink" title="计算几何背景"></a>计算几何背景</h2><p>以计算几何为背景，考察构造思维或其他算法。</p>
+<ul>
+<li>UVA 1318 Monster Trap: （计算几何+图论）容易知道，若怪物能逃离，则存在擦着一系列线段端点的逃离路径，也就是说，能两两连接不被隔断的线段端点之间建一条边，则跑一遍 <code>dfs</code> 或者 <code>bfs</code> 即可。问题在于，若有两个线段在转角处端点重合，这么建边会使得怪物可以在转角处穿墙而过，解决方案是把每一个线段都向两端延长一点点；再注意要特殊处理具有公共端点的线段共线的情况。$\star\star\star\star$ </li>
+<li>CF 1270E Divide Points: （计算几何+构造）从距离的奇偶性入手。把点分成四类：$(odd,odd),(odd,even),(even,odd),(even,even)$，如果只存在其中一类点，就将坐标不断除以2后重新分类；如果存在两类点，则其中一类作为 $A$ 集合，另一类作为 $B$ 集合，它们之间的距离有奇偶之分或是否整除 $4$ 之分；如果存在三类以上的点，则横纵坐标和为奇数作为 $A$ 集合，和为偶数作为 $B$ 集合，它们之间的距离有奇偶之分。$\star\star\star\star$ </li>
+</ul>
+</div><div class="article-licensing box"><div class="licensing-title"><p>计算几何专题练习记录</p><p><a href="http://xyfjason.github.io/blog-xcpc/2020/01/19/计算几何专题练习记录/">http://xyfjason.github.io/blog-xcpc/2020/01/19/计算几何专题练习记录/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>xyfJASON</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2020-01-19</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2021-02-25</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/blog-xcpc/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/blog-xcpc/2020/02/03/Codeforces-Round-616-Div-2/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">Codeforces Round #616 (Div.2)</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/blog-xcpc/2020/01/17/My-New-Blog/"><span class="level-item">My New Blog</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3><div class="content" id="valine-thread"></div><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script><script>new Valine({
+            el: '#valine-thread',
+            appId: "ovQ7Ukrh29Ex4n5TKqN19d5D-MdYXbMMI",
+            appKey: "bGKUwhryO4w9EE9TcpEaOKGF",
+            placeholder: "Please leave your footprints",
+            avatar: "monsterid",
+            avatarForce: false,
+            meta: ["nick","mail","link"],
+            pageSize: 10,
+            lang: "zh-CN",
+            visitor: false,
+            highlight: true,
+            recordIP: false,
+            
+            
+            
+            enableQQ: false,
+            requiredFields: [],
+        });</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/blog-xcpc/logo/myavatar.png" alt="xufJASON"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">xufJASON</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Shenzhen, Guangdong</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/blog-xcpc/archives"><p class="title">108</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/blog-xcpc/categories"><p class="title">9</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/blog-xcpc/tags"><p class="title">11</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/xyfjason" target="_blank" rel="noopener">关注我</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/xyfjason"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Home" href="https://xyfjason.github.io"><i class="fa fa-home"></i></a></div></div></div><!--!--><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile" href="/blog-xcpc/categories/ICPC-CCPC/"><span class="level-start"><span class="level-item">ICPC/CCPC</span></span><span class="level-end"><span class="level-item tag">107</span></span></a><ul><li><a class="level is-mobile" href="/blog-xcpc/categories/ICPC-CCPC/Contests/"><span class="level-start"><span class="level-item">Contests</span></span><span class="level-end"><span class="level-item tag">69</span></span></a><ul><li><a class="level is-mobile" href="/blog-xcpc/categories/ICPC-CCPC/Contests/CCPC/"><span class="level-start"><span class="level-item">CCPC</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/blog-xcpc/categories/ICPC-CCPC/Contests/Codeforces/"><span class="level-start"><span class="level-item">Codeforces</span></span><span class="level-end"><span class="level-item tag">45</span></span></a></li><li><a class="level is-mobile" href="/blog-xcpc/categories/ICPC-CCPC/Contests/ICPC2020/"><span class="level-start"><span class="level-item">ICPC2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/blog-xcpc/categories/ICPC-CCPC/Contests/%E5%85%B6%E4%BB%96/"><span class="level-start"><span class="level-item">其他</span></span><span class="level-end"><span class="level-item tag">21</span></span></a></li></ul></li><li><a class="level is-mobile" href="/blog-xcpc/categories/ICPC-CCPC/Exercises/"><span class="level-start"><span class="level-item">Exercises</span></span><span class="level-end"><span class="level-item tag">26</span></span></a></li><li><a class="level is-mobile" href="/blog-xcpc/categories/ICPC-CCPC/Notes/"><span class="level-start"><span class="level-item">Notes</span></span><span class="level-end"><span class="level-item tag">12</span></span></a></li></ul></li><li><a class="level is-mobile" href="/blog-xcpc/categories/%E9%9A%8F%E7%AC%94/"><span class="level-start"><span class="level-item">随笔</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-07-04T14:40:30.000Z">2021-07-04</time></p><p class="title"><a href="/blog-xcpc/2021/07/04/Nowcoder17797E-2021%E5%B9%BF%E4%B8%9C%E7%9C%81%E8%B5%9B-Excellent-Number/">[Nowcoder17797E][2021广东省赛] Excellent Number</a></p><p class="categories"><a href="/blog-xcpc/categories/ICPC-CCPC/">ICPC/CCPC</a> / <a href="/blog-xcpc/categories/ICPC-CCPC/Exercises/">Exercises</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-06-11T02:29:07.000Z">2021-06-11</time></p><p class="title"><a href="/blog-xcpc/2021/06/11/Codeforces-Round-678-Div-2/">Codeforces Round #678 (Div.2)</a></p><p class="categories"><a href="/blog-xcpc/categories/ICPC-CCPC/">ICPC/CCPC</a> / <a href="/blog-xcpc/categories/ICPC-CCPC/Contests/">Contests</a> / <a href="/blog-xcpc/categories/ICPC-CCPC/Contests/Codeforces/">Codeforces</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-05-21T13:05:14.000Z">2021-05-21</time></p><p class="title"><a href="/blog-xcpc/2021/05/21/Codeforces-Round-721-Div-2/">Codeforces Round #721 (Div.2)</a></p><p class="categories"><a href="/blog-xcpc/categories/ICPC-CCPC/">ICPC/CCPC</a> / <a href="/blog-xcpc/categories/ICPC-CCPC/Contests/">Contests</a> / <a href="/blog-xcpc/categories/ICPC-CCPC/Contests/Codeforces/">Codeforces</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-05-19T14:43:13.000Z">2021-05-19</time></p><p class="title"><a href="/blog-xcpc/2021/05/19/CF833B-The-Bakery/">[CF833B] The Bakery</a></p><p class="categories"><a href="/blog-xcpc/categories/ICPC-CCPC/">ICPC/CCPC</a> / <a href="/blog-xcpc/categories/ICPC-CCPC/Exercises/">Exercises</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-05-19T06:44:41.000Z">2021-05-19</time></p><p class="title"><a href="/blog-xcpc/2021/05/19/ICPC-2020-%E9%93%B6%E5%B7%9D%E7%AB%99%E5%8E%9F%E5%9C%B0%E7%88%86%E7%82%B8%E8%AE%B0/">ICPC-2020 银川站原地爆炸记</a></p><p class="categories"><a href="/blog-xcpc/categories/ICPC-CCPC/">ICPC/CCPC</a> / <a href="/blog-xcpc/categories/ICPC-CCPC/Contests/">Contests</a> / <a href="/blog-xcpc/categories/ICPC-CCPC/Contests/ICPC2020/">ICPC2020</a></p></div></article></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">标签</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/blog-xcpc/tags/AtCoder/"><span class="tag">AtCoder</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/blog-xcpc/tags/CCPC/"><span class="tag">CCPC</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/blog-xcpc/tags/Codeforces/"><span class="tag">Codeforces</span><span class="tag">57</span></a></div><div class="control"><a class="tags has-addons" href="/blog-xcpc/tags/GMCPC/"><span class="tag">GMCPC</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog-xcpc/tags/HDU/"><span class="tag">HDU</span><span class="tag">11</span></a></div><div class="control"><a class="tags has-addons" href="/blog-xcpc/tags/ICPC/"><span class="tag">ICPC</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/blog-xcpc/tags/Nowcoder/"><span class="tag">Nowcoder</span><span class="tag">12</span></a></div><div class="control"><a class="tags has-addons" href="/blog-xcpc/tags/POI/"><span class="tag">POI</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog-xcpc/tags/hihoCoder/"><span class="tag">hihoCoder</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blog-xcpc/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><span class="tag">学习笔记</span><span class="tag">17</span></a></div><div class="control"><a class="tags has-addons" href="/blog-xcpc/tags/%E9%9A%8F%E7%AC%94/"><span class="tag">随笔</span><span class="tag">1</span></a></div></div></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/blog-xcpc/"><img src="/blog-xcpc/logo/logo.png" alt="xyfJASON" height="28"></a><p class="is-size-7"><span>&copy; 2021 xyfJASON</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/blog-xcpc/js/column.js"></script><script src="/blog-xcpc/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/blog-xcpc/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><script type="text/x-mathjax-config">MathJax.Hub.Config({
+            'HTML-CSS': {
+                matchFontHeight: false
+            },
+            SVG: {
+                matchFontHeight: false
+            },
+            CommonHTML: {
+                matchFontHeight: false
+            },
+            tex2jax: {
+                inlineMath: [
+                    ['$','$'],
+                    ['\\(','\\)']
+                ]
+            }
+        });</script><script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script><!--!--><!--!--><!--!--><script src="/blog-xcpc/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/blog-xcpc/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/blog-xcpc/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>
